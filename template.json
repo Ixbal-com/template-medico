@@ -3,6 +3,7 @@
   "name": "Médico / Consultorio de medicina familiar",
   "version": "1.0.0",
   "category": "salud",
+  "uses": ["citas"],
   "style": "Clínico accesible: verde azulado profundo y ámbar sobre blanco cálido, letra grande y alto contraste pensados para pacientes mayores; títulos en Lexend y texto en Atkinson Hyperlegible.",
   "description": "Para médicos generales, familiares y consultorios: agenda de cita en tres pasos (motivo, día y hora según tu horario, y datos) que llega lista por WhatsApp, más servicios con precio, visitas a domicilio y seguros.",
   "tags": [
