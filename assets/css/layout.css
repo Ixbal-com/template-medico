@@ -1,0 +1,52 @@
+/* Estructuras reutilizables: contenedores, secciones y rejillas. */
+.container {
+  width: min(100% - var(--container-gutter) * 2, var(--container-width));
+  margin-inline: auto;
+}
+
+.container--narrow {
+  width: min(100% - var(--container-gutter) * 2, var(--container-narrow));
+}
+
+.section {
+  padding-block: var(--space-section);
+}
+
+.section--muted {
+  background: var(--color-surface-muted);
+}
+
+.section__header {
+  max-width: 42rem;
+  margin-bottom: var(--space-12);
+}
+
+.section__title {
+  font-size: var(--text-2xl);
+}
+
+.section__lead {
+  margin-top: var(--space-4);
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+}
+
+/* Etiqueta pequeña sobre cada título, con una barra de color */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.25rem;
+  height: 0.3rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+}

@@ -1,0 +1,68 @@
+/* Visitas a domicilio: foto a todo lo ancho con una tarjeta encima. */
+.home-visits {
+  position: relative;
+  display: grid;
+}
+
+.home-visits__photo {
+  --media-ratio: 16 / 9;
+  border-radius: 0;
+}
+
+.home-visits__inner {
+  margin-top: calc(var(--space-16) * -1);
+  padding-bottom: var(--space-section);
+}
+
+.home-visits__card {
+  position: relative;
+  display: grid;
+  gap: var(--space-4);
+  max-width: 34rem;
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+@media (min-width: 60rem) {
+  .home-visits__photo {
+    --media-ratio: 21 / 9;
+  }
+
+  .home-visits__inner {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.home-visits__price strong {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  color: var(--color-primary);
+}
+
+.home-visits__zones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.home-visits__zones li {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--color-primary-soft);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.home-visits__card .button {
+  justify-self: start;
+}

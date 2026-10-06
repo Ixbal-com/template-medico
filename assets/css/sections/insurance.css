@@ -1,0 +1,65 @@
+.insurance {
+  display: grid;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 60rem) {
+  .insurance {
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--space-16);
+  }
+
+  .insurance__payments {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Nombres de aseguradoras en cuadros, sin logotipos (cada marca pide permiso para usarlos). */
+.insurance__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 36rem) {
+  .insurance__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.insurance__list li {
+  display: grid;
+  place-items: center;
+  min-height: 4.5rem;
+  padding: var(--space-3);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.insurance__payments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-8);
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-soft);
+  list-style: none;
+  font-weight: 700;
+}
+
+.insurance__payments li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.insurance__payments .icon {
+  fill: var(--color-primary);
+}

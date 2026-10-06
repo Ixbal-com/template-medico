@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#e2f0f0"/>
+  <rect x="0" y="560" width="1200" height="70" fill="#0d5c63"/>
+  <g transform="translate(100 110) scale(2.6)">
+    <rect width="44" height="44" rx="12" fill="#0d5c63"/>
+    <path d="M18 10h8v8h8v8h-8v8h-8v-8h-8v-8h8z" fill="#ffffff"/>
+    <circle cx="35" cy="9" r="4" fill="#f2a541"/>
+  </g>
+  <text x="100" y="340" fill="#15232b" font-family="system-ui, sans-serif" font-weight="600" font-size="84">Dr. Andrés Salinas</text>
+  <text x="104" y="420" fill="#0d5c63" font-family="system-ui, sans-serif" font-size="44">Medicina familiar · Querétaro</text>
+  <text x="104" y="608" fill="#ffffff" font-family="system-ui, sans-serif" font-size="30">Consultorio y visitas a domicilio · Agenda en línea</text>
+</svg>

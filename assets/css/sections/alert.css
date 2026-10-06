@@ -1,0 +1,17 @@
+/* Franja superior de emergencias: siempre visible, rojo sobre rosado claro. */
+.alert-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--container-gutter);
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-align: center;
+}
+
+.alert-bar a {
+  color: inherit;
+}

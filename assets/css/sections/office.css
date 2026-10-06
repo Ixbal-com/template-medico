@@ -1,0 +1,51 @@
+.office {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 48rem) {
+  .office {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .office__header,
+  .office__features {
+    grid-column: 1 / -1;
+  }
+}
+
+.office__photo {
+  border-radius: var(--radius-lg);
+}
+
+.office__features {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+}
+
+@media (min-width: 48rem) {
+  .office__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
+  .office__features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.office__features li {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.office__features .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--color-primary);
+}

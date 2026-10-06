@@ -1,0 +1,33 @@
+/* Qué llevar: una fila de pastillas con ícono. */
+.checklist {
+  padding-block: var(--space-12);
+}
+
+.checklist__title {
+  font-size: var(--text-xl);
+  text-align: center;
+}
+
+.checklist__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  padding: 0;
+  list-style: none;
+}
+
+.checklist__list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-full);
+  background: var(--color-accent-soft);
+  font-weight: 700;
+}
+
+.checklist__list .icon {
+  fill: var(--color-primary);
+}

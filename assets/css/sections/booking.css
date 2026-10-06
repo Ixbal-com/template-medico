@@ -1,0 +1,49 @@
+/* Agendar: notas a un lado y tarjeta con la cita en pasos. */
+.booking {
+  display: grid;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (min-width: 60rem) {
+  .booking {
+    grid-template-columns: 0.85fr 1.15fr;
+  }
+}
+
+.booking__notes {
+  display: grid;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  padding: 0;
+  list-style: none;
+}
+
+.booking__notes li {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.booking__notes .icon {
+  margin-top: 0.2em;
+  fill: var(--color-primary);
+}
+
+.booking__note--alert {
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-danger-soft);
+  color: var(--color-danger);
+  font-weight: 700;
+}
+
+.booking__note--alert .icon {
+  fill: currentColor;
+}
+
+.booking__card {
+  padding: clamp(var(--space-6), 4vw, var(--space-12));
+  border: 0;
+  border-top: 6px solid var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
