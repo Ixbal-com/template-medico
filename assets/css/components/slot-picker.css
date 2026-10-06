@@ -31,6 +31,12 @@
   overflow: visible;
 }
 
+/* Cada opción es el contenedor de su radio oculto, para que no se salga del carrusel. */
+.slot-picker__day,
+.slot-picker__time {
+  position: relative;
+}
+
 .slot-picker__input {
   position: absolute;
   opacity: 0;
